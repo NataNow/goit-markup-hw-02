@@ -4,10 +4,10 @@
     --accent-text-color: #2196F3 ;
     --primary-br-color:  #FFFFFF;
     --title-list-text-color: #757575;
-    --footer-address: #FFFFFF 60%;
     --secondary-ff: 'Raleway', sans-serif;
     --primary-ff: 'Roboto', sans-serif;
-
+    --footer-br-color: #2F303A;
+    --logo-link: #000000;
 }
 
 body {
@@ -53,7 +53,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
-    color: #000000;
+    color: var(--logo-link);
   }
     
 .nav-link, .contakt-link {
@@ -82,8 +82,8 @@ color:var(--accent-text-color);
 
 /*hero*/
 .hero {
-  background-color: #2F303A;
-}
+  background-color: var(--footer-br-color);
+} 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -96,7 +96,6 @@ color:var(--accent-text-color);
 
 .hero-button {
   background-color: var(--accent-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: 'Roboto';
   font-style: normal;
@@ -159,7 +158,11 @@ color:var(--accent-text-color);
 /*footer*/
 
 .footer {
-  background-color: #2F303A;
+  background-color: var(--footer-br-color);
+}
+
+.logo-footer {
+  color: var(--primary-br-color);
 }
 .footer .logo {
 color: var(--primary-br-color);
@@ -168,17 +171,25 @@ font-family: var(--secondary-ff);
 }
 
 .footer-adres {
-  color: var(--primary-br-color);
-  font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
+  list-style: none;
 }
 
-.footer .contact-link {
-  color: #FFFFFF
-  60%;
-  line-height: calc(24 / 14);
+.location {
+  color: var(--primary-br-color);
+  text-decoration: none;
 }
 
+.footer-contacts {
+  color: var(--title-list-text-color);
+  text-decoration: none;
+}
+
+.footer-contacts:focus,
+.footer-contacts:hover {
+color: var(--accent-text-color);
+}
 
 /*button*/
 
